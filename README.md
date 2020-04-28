@@ -13,7 +13,7 @@ Spicetify Extensions and Themes
       - Prominent 
       - Vibrant 
       - Vibrant non alarming
-      - ColorThief color pallete (Work in Progress)
+      - ColorThief color pallete
     - Track information
       - Album name
       - Track title
