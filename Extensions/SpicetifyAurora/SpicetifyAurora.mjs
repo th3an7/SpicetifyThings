@@ -153,7 +153,11 @@ class AuroraSpotify {
 
         });
 
-        this.sendJsonToAurora (this.json);
+        if(JSON.stringify(this.json) !== this.lastJson){
+		console.log("Sending states...");
+		this.lastJson = JSON.stringify(this.json);
+		this.sendJsonToAurora(this.json);
+		}
 
         }, 1000);
     }
