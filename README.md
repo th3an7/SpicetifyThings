@@ -2,7 +2,7 @@
 Spicetify Extensions and Themes
 
 # Extensions
-- ### [AuroraSpotify.mjs - get playback information as RGB effects in Project Aurora](Extensions/AuroraSpotify.mjs)
+- ### [AuroraSpotify.mjs - get playback information as RGB effects in Project Aurora](Extensions/SpicetifyAurora/SpicetifyAurora.mjs)
 [![Extension Showcase](assets/Extensions/AuroraSpotify/AuroraSpotifyShowcase.gif?raw=true)](https://youtu.be/2PLmpWVxD9A "Click to watch full video")
   - Available data: 
     - Current track duration, progress
