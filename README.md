@@ -22,3 +22,6 @@ Spicetify Extensions and Themes
 # Themes
 - ### [DarkOrange](Themes/DarkOrange)
 ![HomeScreenshot](assets/Themes/DarkOrange/DarkOrangeHome.png?raw=true "Home")
+
+- ### [DarkOrange-xpui](Themes/DarkOrange-xpui)
+![HomeScreenshot](assets/Themes/DarkOrange-xpui/DarkOrange-xpuiHome.png?raw=true "Home")
