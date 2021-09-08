@@ -19,7 +19,7 @@ input {
     color: var(--spice-text) !important;
 }
 
-.main-home-homeHeader,
+/*.main-home-homeHeader,
 .x-entityHeader-overlay,
 .x-actionBarBackground-background,
 .main-actionBarBackground-background,
@@ -28,7 +28,7 @@ input {
 {
     background-color: unset !important;
     background-image: unset !important;
-}
+}*/
 
 .main-playButton-PlayButton.main-playButton-primary {
     color: white;
@@ -45,6 +45,7 @@ input {
 /* Remove Topbar background colour */
 .main-topBar-background {
     background-color: unset !important;
+	right: -500px;
 }
 .main-topBar-overlay {
     background-color: var(--spice-main);
@@ -168,4 +169,8 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 
 .main-topBar-historyButtons {
     padding-left: 50px;
+}
+
+.wQi0raQMEJJrELuj_2FP {
+	height: 100%;
 }
