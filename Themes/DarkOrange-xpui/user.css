@@ -173,7 +173,7 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     padding-left: 50px;
 }
 
-.main-rootlist-wrapper {
+#spicetify-playlist-list > div {
     height: 3030px !important;
 }
 
@@ -256,6 +256,6 @@ div.main-coverSlotCollapsed-container > div > a > div > div {
     transition: transform, 0s, ease, 1s;
 }
 
-.giO6cIQ8auPNZuTvC4Y8 {
+.progress-bar__slider {
     transition: left, 0s, ease, 1s;
 }
