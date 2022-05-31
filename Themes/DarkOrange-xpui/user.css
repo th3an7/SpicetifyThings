@@ -1,5 +1,8 @@
 :root {
     --player-bar-height: 105px;
+    --grid-gap: 15px;
+    --column-count: 9;
+    overflow: hidden;
 }
 
 .main-rootlist-rootlistDividerGradient {
@@ -19,16 +22,14 @@ input {
     color: var(--spice-text) !important;
 }
 
-/*.main-home-homeHeader,
-.x-entityHeader-overlay,
-.x-actionBarBackground-background,
+.main-entityHeader-overlay,
 .main-actionBarBackground-background,
 .main-entityHeader-overlay,
 .main-entityHeader-backgroundColor
 {
-    background-color: unset !important;
-    background-image: unset !important;
-}*/
+    -webkit-transition: 3s;
+    transition: 3s;
+}
 
 .main-playButton-PlayButton.main-playButton-primary {
     color: white;
@@ -158,15 +159,17 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 }
 
 .Root__nav-bar {
-    width: 5px;
-    transition: width .3s, content-visibility .3s;
+    transform: translateX(-230px);
+    transition: transform .3s, content-visibility .3s;
     content-visibility: hidden;
+    margin-right: -240px;
 }
 
 .Root__nav-bar:hover {
+    transform: translateX(0px);
     width: 240px;
     content-visibility: initial;
-    transition: width .3s, content-visibility .3s;
+    transition: transform .3s, content-visibility .3s;
 }
 
 .main-topBar-historyButtons {
@@ -177,23 +180,19 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     height: 3030px !important;
 }
 
-/*.wQi0raQMEJJrELuj_2FP {
-	height: 60vh;
-}*/
-
 
 /** Additions **/
-.playback-bar__progress-time {
+div.main-nowPlayingBar-center > div > div.playback-bar > div.playback-progressbar.DFtdzavKSbEhwKYkPTa6 {
     min-width: 40px;
     font-size: 15px;
     position: relative;
     bottom: 5px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
-#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.main-nowPlayingBar-center > div > div.playback-bar > div.playback-progressbar.bqYllg5gUoS2S1Y0fjqx > div {
+#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.main-nowPlayingBar-center > div > div.playback-bar > div.playback-progressbar.DFtdzavKSbEhwKYkPTa6 > div {
     position: absolute !important;
-    padding-top: 5px !important;
+    padding-top: 8px !important;
 }
 
 div.main-nowPlayingBar-center > div > div.playback-bar {
@@ -201,17 +200,17 @@ div.main-nowPlayingBar-center > div > div.playback-bar {
     bottom: 0;
 }
 
-#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.main-nowPlayingBar-center > div > div.playback-bar > div.playback-progressbar.bqYllg5gUoS2S1Y0fjqx {
+#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.main-nowPlayingBar-center > div > div.playback-bar > div.playback-progressbar.DFtdzavKSbEhwKYkPTa6 {
     position: absolute !important;
     width: 100%;
-    padding-top: 6px;
+    padding-top: 8px;
 }
 
 div.main-coverSlotCollapsed-container > div > a > div > div {
     object-fit: contain;
     width: 150px !important;
     height: 150px !important;
-    bottom: 25px;
+    bottom: 35px;
 }
 
 .cover-art .cover-art-image {
@@ -238,6 +237,10 @@ div.main-coverSlotCollapsed-container > div > a > div > div {
     visibility: hidden;
 }
 
+.playback-bar__progress-time-elapsed {
+    visibility: hidden;
+}
+
 .main-playPauseButton-button {
     --button-size: 50px !important;
 }
@@ -252,10 +255,28 @@ div.main-coverSlotCollapsed-container > div > a > div > div {
     fill: black;
 }
 
-.lz_1dGnEKWyCpV_qE0ux {
+.epWhU7hHGktzlO_dop6z {
     transition: transform, 0s, ease, 1s;
 }
 
 .progress-bar__slider {
     transition: left, 0s, ease, 1s;
+}
+
+.main-card-cardMetadata {
+    min-height: 62px;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.ZYPWoTzgB8bUDbQRpbTr > section:nth-child(2) {
+    display: none;
+}
+
+.EY6S7vlkxB7SF_OjjF_Y > div:nth-child(3) {
+    display: none;
+}
+
+.McwcCfBLSuXa5UDU1IMw {
+    display: none;
 }
