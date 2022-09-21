@@ -1,7 +1,7 @@
 # SpicetifyOBS
 ## Display currently playing song in OBS using Spicetify plugin
 
-[![Extension Showcase](../../assets/Extensions/SpicetifyOBS/SpicetifyOBS.webm?raw=true)]
+https://user-images.githubusercontent.com/13398380/191394837-305672e2-731f-445c-a54c-0c38c176ea66.mov
 
 #### Prerequisites:
 * Python
