@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Spotify Now Playing Widget</title>
+<link rel="stylesheet" href="css/custom.css">
+<script>
+    function event(data) {
+		whatDo = data.split(':');
+		if (whatDo[0] == "State") {
+			if(whatDo[1] == "true") {
+				animateIn();
+				//document.body.style.background = "rgba(0, 0, 0, 0.2)"
+				document.body.style.display = "flex";
+			}
+			else if(whatDo[1] == "false") {
+				animateOut();
+				//document.body.style.background = "transparent";
+				document.body.style.display = "contents";
+			}
+		}
+
+		if (whatDo[0] == "Title") {
+			changeElementContent("title", whatDo[1]);
+			if (isElementOverflowing("title") == true) {
+				wrapContentsInMarquee("title")
+			}
+		}
+
+		if (whatDo[0] == "Artist") {
+			changeElementContent("artist", whatDo[1]);
+		}
+		
+		if (whatDo[0] == "Cover") {
+			document.getElementById("cover").src = (whatDo[1] + ":" + whatDo[2]);
+			//document.getElementsByTagName("body")[0].style.backgroundImage = 'url("' + (whatDo[1] + ":" + whatDo[2]) + '")';
+		}
+
+		if (whatDo[0] == "ArtistHero") {
+			document.getElementsByTagName("body")[0].style.backgroundImage = 'url("' + (whatDo[1] + ":" + whatDo[2]) + '")';
+		}
+
+		if (whatDo[0] == "PositionMs") {
+			document.getElementById("progressBar").value = whatDo[1];
+		}
+
+		if (whatDo[0] == "Position") {
+			changeElementContent("progressText", (whatDo[1] + ":" + whatDo[2]));
+		}
+
+		if (whatDo[0] == "DurationMs") {
+			document.getElementById("progressBar").max = whatDo[1];
+		}
+
+		if (whatDo[0] == "Duration") {
+			changeElementContent("durationText", (whatDo[1] + ":" + whatDo[2]));
+		}
+    }
+
+    function animateIn() {
+		document.getElementById("retrigger").animate(keyframes, timings_in);
+	}
+
+	function animateOut() {
+		document.getElementById("retrigger").animate(keyframes, timings_out);
+	}
+    
+    var keyframes = [ {
+		left : "-100%",
+		opacity : "0"
+	}, {
+		left : "0%",
+		opacity : "1",
+	} ]
+	var timings_in = {
+		duration : 350,
+		iterations : 1,
+		direction : "normal",
+		fill : "both",
+		easing : "ease-in"
+	}
+	var timings_out = {
+		duration : 350,
+		iterations : 1,
+		direction : "reverse",
+		fill : "both",
+		easing : "ease-out"
+	}
+
+</script>
+<script src="js/client.js"></script>
+</head>
+<body>
+    <div class="sitebox">
+        <div id="retrigger">
+			<img id="cover" src="css/cover_placeholder.png" width="300px" height="300px">
+			<span class="text" id="title">Title</span>
+			<span class="text2" id="artist">Artist</span>
+			<span class="text3" id="progressText">ProgressTime</span>
+			<span class="text4" id="durationText">DurationTime</span>
+			<progress id="progressBar" max="100" value="40"></progress>
+        </div>
+    </div>
+</body>

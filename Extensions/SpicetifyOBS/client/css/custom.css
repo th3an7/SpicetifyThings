@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black');
+
+html {
+    height: 1440px;
+    /*width: 900px;*/
+	background-size: cover;
+}
+
+body {
+    height: 1440px;
+    /*width: 900px;*/
+    margin: 0px;
+    overflow: hidden;
+    font-family: "Circular Spotify Tx T Black";
+	backdrop-filter: blur(15px);
+	display: flex;
+	/*background-position-y: 200%;*/
+    background: center center fixed;
+    background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.sitebox {
+    /*margin-top: 33%;*/
+	margin-top: 20%;
+}
+
+#retrigger {
+    position: absolute;
+    left: -100%;
+}
+
+.text {
+    position: absolute;
+    top: 75px;
+    left: 340px;
+    width: 1120px;
+    height: 115px;
+    font-size: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.text2 {
+    position: absolute;
+    top: 175px;
+    left: 340px;
+    font-size: 2em;
+    text-align: justify;
+    white-space: pre;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	font-weight: 200;
+}
+
+.text3 {
+    position: absolute;
+    top: 235px;
+    left: 340px;
+    font-size: 1em;
+    text-align: justify;
+    white-space: pre;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.text4 {
+    position: absolute;
+    top: 235px;
+    left: 910px;
+    font-size: 1em;
+    text-align: justify;
+    white-space: pre;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+progress[value] {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 600px;
+    appearance: none;
+    border-radius: 2px;
+	-webkit-appearance: none;
+	box-shadow: 2px 2px 5px black;
+}
+
+progress[value]::-webkit-progress {
+	background-color: #555555;
+}
+
+progress[value]::-webkit-progress-value {
+    background: white;
+}
+
+#cover {
+	background-color: transparent;
+	background-image: 'css/cover_placeholder.png';
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	box-shadow: 2px 2px 10px black;
+	position: absolute;
+	left: 20px
+}
+
+marquee {
+    width: 1000px;
+	height: 150px;
+}
