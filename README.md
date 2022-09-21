@@ -19,6 +19,9 @@ Spicetify Extensions and Themes
       - Track title
       - Artist name
 -----
+- ### [SpicetifyOBS - display currently playing song in OBS](Extensions/SpicetifyOBS/)
+![Extension Showcase](assets/Extensions/SpicetifyOBS/image.png?raw=true)
+-----
 # Themes
 - ### [DarkOrange](Themes/DarkOrange)
 ![HomeScreenshot](assets/Themes/DarkOrange/DarkOrangeHome.png?raw=true "Home")
